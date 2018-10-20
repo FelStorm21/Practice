@@ -1,4 +1,4 @@
-package vmamakers.practice;
+package me.vmamakers.practice;
 
 import com.google.inject.Inject;
 import com.google.inject.Provider;
@@ -25,6 +25,22 @@ public class PizzaStore {
 	
 	public void name() {
 		System.out.println("We are " + company.getName() + "!");
+	}
+
+	public Company getCompany() {
+		return company;
+	}
+
+	public void setCompany(Company company) {
+		this.company = company;
+	}
+
+	public Pizza getPizza() {
+		return pizza;
+	}
+
+	public Provider<Building> getBuildingProvider() {
+		return buildingProvider;
 	}
 	
 }

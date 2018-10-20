@@ -1,4 +1,4 @@
-package vmamakers.practice;
+package me.vmamakers.practice;
 
 import com.google.inject.AbstractModule;
 
@@ -8,7 +8,7 @@ public class BindingsModule extends AbstractModule {
 	protected void configure() {
 		bind(Pizza.class).to(VeggiePizza.class);
 		bind(Building.class).toProvider(BuildingProvider.class);
-		bind(Company.class).to(DominoesPizzaCompany.class);
+		bind(Company.class).to(PapaJohnsPizzaCompany.class);
 	}
 	
 }

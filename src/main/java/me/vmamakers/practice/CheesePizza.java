@@ -1,4 +1,4 @@
-package vmamakers.practice;
+package me.vmamakers.practice;
 
 public class CheesePizza implements Pizza {
 
