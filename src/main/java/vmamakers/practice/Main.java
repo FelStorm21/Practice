@@ -10,5 +10,6 @@ public class Main {
 		
 		pizzaStore.slogan();
 		pizzaStore.brag();
+		pizzaStore.name();
 	}
 }

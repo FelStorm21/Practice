@@ -7,6 +7,7 @@ public class PizzaStore {
 	
 	private final Pizza pizza;
 	private final Provider<Building> buildingProvider;
+	@Inject private Company company;
 	
 	@Inject
 	public PizzaStore(Pizza pizza, Provider<Building> buildingProvider) {
@@ -20,6 +21,10 @@ public class PizzaStore {
 	
 	public void brag() {
 		System.out.println("We can pump out " + buildingProvider.get().getNumPizzas() + " pizzas every week!");
+	}
+	
+	public void name() {
+		System.out.println("We are " + company.getName() + "!");
 	}
 	
 }

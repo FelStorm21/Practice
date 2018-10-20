@@ -8,6 +8,7 @@ public class BindingsModule extends AbstractModule {
 	protected void configure() {
 		bind(Pizza.class).to(VeggiePizza.class);
 		bind(Building.class).toProvider(BuildingProvider.class);
+		bind(Company.class).to(DominoesPizzaCompany.class);
 	}
 	
 }
